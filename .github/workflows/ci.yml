@@ -26,7 +26,7 @@ jobs:
       - name: Run tests
         run: |
           python manage.py collectstatic --no-input
-          coverage run --source="." python manage.py test --testrunner "xmlrunner.extra.djangotestrunner.XMLTestRunner"
+          coverage run --source="." manage.py test --testrunner "xmlrunner.extra.djangotestrunner.XMLTestRunner"
           coverage report --show-missing
           coverage xml
       - name: Publish test report
