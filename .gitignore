@@ -76,3 +76,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Test report files
+TEST-*.xml
