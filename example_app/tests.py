@@ -1,7 +1,6 @@
 from django.http.request import HttpRequest
 from django.test import Client, TestCase
 from .views import TITLES, hello
-from functools import reduce
 
 
 class ViewsTestCase(TestCase):
@@ -13,7 +12,7 @@ class ViewsTestCase(TestCase):
         response = hello(HttpRequest())
 
         self.assertEquals(200, response.status_code)
-        self.assertTrue(is_title_exist(str(response.content), TITLES))
+        self.assertTrue(is_random_title_exist(str(response.content), TITLES))
 
     def test_hello_with_valid_request(self):
         request = HttpRequest()
@@ -33,7 +32,7 @@ class ViewsTestCase(TestCase):
         self.assertEquals(400, response.status_code)
     
 
-def is_title_exist(content, titles):
+def is_random_title_exist(content, titles):
     for title in titles:
         if title in content:
             return True
