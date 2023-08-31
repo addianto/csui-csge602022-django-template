@@ -1,6 +1,6 @@
 # PBP Django Project Template
 
-Platform-Based Programming (CSGE602022) - Organized by the Faculty of Computer Science Universitas Indonesia, Odd Semester 2022/2023
+Platform-Based Programming (CSGE602022) - Organized by the Faculty of Computer Science Universitas Indonesia, Odd Semester 2023/2024
 
 *Read this in other languages: [Indonesian](README.md), [English](README.en.md)*
 
@@ -85,7 +85,7 @@ code template repository can be found at: https://django-pbp-template.herokuapp.
 
 If you have successfully created your own repository and set up the Django Web
 application project, you can start working on the weekly tutorials and assignments
-related to Django Web application development. 
+related to Django Web application development.
 
 If you found any issues or have ideas to improve the code template, feel free
 to discuss your proposal via the [issue tracker](https://github.com/pbp-fasilkom-ui/django-pbp-template/issues)
